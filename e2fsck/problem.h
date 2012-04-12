@@ -561,6 +561,10 @@ struct problem_context {
 /* Index start doesn't match start of next extent down */
 #define PR_1_EXTENT_INDEX_START_INVALID	0x01006D
 
+
+/* Bad extended attribute value in inode */
+#define PR_1_INODE_EA_BAD_VALUE		0x010070
+
 /*
  * Pass 1b errors
  */

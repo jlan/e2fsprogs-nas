@@ -954,6 +954,12 @@ static struct e2fsck_problem problem_table[] = {
 	     "Logical start %b does not match logical start %c at next level.  "),
 	  PROMPT_FIX, 0 },
 
+
+	/* Bad extended attribute value in inode */
+	{ PR_1_INODE_EA_BAD_VALUE,
+	  N_("@a in @i %i is corrupt (@n value)."),
+	  PROMPT_CLEAR, 0},
+
 	/* Pass 1b errors */
 
 	/* Pass 1B: Rescan for duplicate/bad blocks */
