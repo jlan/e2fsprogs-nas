@@ -1461,7 +1461,7 @@ profile_error:
 			}
 			break;
 		case 'v':
-			verbose = 1;
+			verbose++;
 			break;
 		case 'F':
 			force++;
