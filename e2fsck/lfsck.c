@@ -774,7 +774,7 @@ static int lfsck_recreate_obj(int cmd, void *creat, struct ostid *oi,
 		return rc;
 	}
 
-	rc = ioctl(fd, cmd, &creat);
+	rc = ioctl(fd, cmd, creat);
 	if (rc) {
 		rc = -errno;
 		log_write("[%u]: failed to recreate %s missing obj "DOSTID"\n",
