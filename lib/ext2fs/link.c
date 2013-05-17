@@ -69,7 +69,7 @@ static int link_proc(struct ext2_dir_entry *dirent,
 	 * truncate it and return.
 	 */
 	if (dirent->inode) {
-		min_rec_len = __EXT2_DIR_REC_LEN(dirent->name_len & 0xFF);
+		min_rec_len = EXT2_DIR_REC_LEN((struct ext2_dir_entry_2 *)dirent);
 		if (curr_rec_len < (min_rec_len + rec_len))
 			return ret;
 		rec_len = curr_rec_len - min_rec_len;
