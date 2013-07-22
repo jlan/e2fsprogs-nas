@@ -3,6 +3,7 @@
 #define _XOPEN_SOURCE		/* for getdate */
 #define _XOPEN_SOURCE_EXTENDED	/* for getdate */
 
+#include "config.h"
 #include <stdio.h>
 #include <sys/stat.h>
 #include <time.h>

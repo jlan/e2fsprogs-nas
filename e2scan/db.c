@@ -1,6 +1,7 @@
 #define _GNU_SOURCE
 #define _FILE_OFFSET_BITS 64
 
+#include "config.h"
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
