@@ -304,6 +304,13 @@ errcode_t ext2fs_file_write(ext2_file_t file, const void *buf,
 		ptr += c;
 		count += c;
 		nbytes -= c;
+
+		/* Update inode size */
+		if (EXT2_I_SIZE(&file->inode) < file->pos) {
+			retval = ext2fs_file_set_size2(file, file->pos);
+			if (retval)
+				goto fail;
+		}
 	}
 
 fail:
