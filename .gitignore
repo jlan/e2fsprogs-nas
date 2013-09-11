@@ -1,3 +1,13 @@
+#
+# Top level generic files
+#
+git.branch.str
+.gitignore
+
+# cscsope files
+tags
+cscope.*
+
 autom4te.cache
 build
 build.profiled
