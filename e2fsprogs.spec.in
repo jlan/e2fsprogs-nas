@@ -6,7 +6,7 @@
 Summary: Utilities for managing ext2/ext3/ext4 filesystems
 Name: e2fsprogs
 Version: @E2FSPROGS_PKGVER@
-Release: 0%{_vendor}
+Release: %{e2fsprogs_release}
 License: GPLv2 and LGPLv2
 Group: System Environment/Base
 Source:  ftp://download.sourceforge.net/pub/sourceforge/e2fsprogs/e2fsprogs-%{version}.tar.gz
